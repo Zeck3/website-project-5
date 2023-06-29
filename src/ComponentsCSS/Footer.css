@@ -1,0 +1,33 @@
+#FooterDiv {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+#FooterDiv .Columns {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 280px;
+}
+
+#FooterDiv .Columns ul {
+    line-height: 2.5;
+}
+
+#FooterDiv .Columns h3 {
+    line-height: 2.5;
+}
+
+#FooterDiv #Logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
