@@ -1,12 +1,17 @@
 import './App.css';
-import NavigationBar from './Components/NavBar';
+import './ComponentsCSS/Header.css';
+import './ComponentsCSS/Highlight.css';
+import './ComponentsCSS/Footer.css';
+import Header from './Components/Header';
+import Highlight from './Components/Highlight';
+import Footer from './Components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <NavigationBar />
-    </div>
+      <div className="App">
+        <div id='HeaderDiv'><Header /></div>
+        <div id='BodyDiv'><Highlight /></div>
+        <div id='FooterDiv'><Footer /></div>
+      </div>
   );
 }
-
-export default App;
