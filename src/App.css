@@ -9,30 +9,37 @@
 }
 
 body {
-  background-color: #080401;
+  background: #080401;
+  background-blend-mode: screen;
+  height: auto;
 }
 
 h1 {
   font-family: 'Anton', sans-serif;
   font-size: 72px;
-  color: #F5F5F5;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #F2EAD3;
 }
 
 h2 {
   font-family: 'Anton', sans-serif;
   font-size: 40px;
-  color: #F5F5F5;
+  letter-spacing: 1px;
+  color: #F2EAD3;
 }
 
 h3 {
   font-family: 'Anton', sans-serif;
   font-size: 24px;
-  color: #F5F5F5;
+  letter-spacing: 1px;
+  color: #F2EAD3;
 }
 
 p {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
+  line-height: 1.5;
   color: #F5F5F5;
 }
 
@@ -54,33 +61,19 @@ a {
   color: #F5F5F5;
 }
 
-#NavBar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #F5F5F5;
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #F2EAD3;
 }
 
-.Row {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.Row .Columns {
-  flex: 25%;
-  text-align: center;
-  width: 300px;
-  min-width: 200px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-#Logo {
+#BodyDiv {
   display: flex;
   position: relative;
-  align-items: center;
-  transform: scale(0.9, 1);
-  padding: 0 60px;
+  align-items: flex-start;
+  margin: 62px auto auto auto;
+  width: 100%;
+  height: auto;
 }
