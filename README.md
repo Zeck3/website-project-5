@@ -5,4 +5,8 @@ barriers of my capabilities, what I will learn from this journey will be useful 
 aiming for, but I might not be sure where that destination would be.
 
 ## Program Description
+<<<<<<< HEAD
 The project 
+=======
+The project 
+>>>>>>> c28ddc3dd73f9a158a5fce93f70116d7e36584c5
