@@ -62,9 +62,9 @@ a {
 }
 
 button {
+  font-family: 'DM Sans', sans-serif;
   width: 100px;
   height: 30px;
-  border-radius: 20px;
   border: none;
   background-color: #F2EAD3;
 }
@@ -72,6 +72,7 @@ button {
 #BodyDiv {
   display: flex;
   position: relative;
+  flex-direction: column;
   align-items: flex-start;
   margin: 62px auto auto auto;
   width: 100%;

@@ -12,8 +12,8 @@ export default function Header() {
                 </div>
             </div>
             <div id='Logo'>
-                <h2 className='LogoTexts'>BARAKO</h2>
-                <h3 className='LogoTexts'>Café</h3>
+                <h2>BARAKO</h2>
+                <h3>Café</h3>
             </div>
             <div className='NavigationBar'>
                 <div className='Links'>
