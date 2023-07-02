@@ -1,0 +1,59 @@
+#HighlightPanelLeftDiv {
+    display: flex;
+    position: relative;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    border: 1px solid #F5F5F5;
+}
+
+#HighlightPanelLeftDiv #Container {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    height: inherit;
+    padding: 100px 0;
+    width: 75%;
+    border: 1px solid #F5F5F5;
+}
+
+#HighlightPanelLeftDiv .Columns {
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    border: 1px solid #F5F5F5;
+    height: 60%;
+    margin: auto;
+}
+
+#HighlightPanelLeftDiv .Columns .BoxContainer1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    background-image: url(../ImageAssets/nathan-dumlao-pMW4jzELQCw-unsplash.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+	background-position: center;
+}
+
+#HighlightPanelLeftDiv .Columns .BoxContainer2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    height: 300px;
+}
+
+#HighlightPanelLeftDiv .Columns .BoxContainer2 p {
+    margin: 20px 0;
+    width: 65%;
+}
