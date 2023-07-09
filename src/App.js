@@ -1,30 +1,21 @@
 import './App.css';
-import './ComponentsCSS/Header.css';
-import './ComponentsCSS/Highlight.css';
-import './ComponentsCSS/Footer.css';
-import './ComponentsCSS/HighlightPanelLeft.css';
-import './ComponentsCSS/HighlightPanelRight.css';
+import './MainComponents.css';
 
-import Header from './Components/Header';
-import Highlight from './Components/Highlight';
-import Footer from './Components/Footer';
-import HighlightPanelLeft from './Components/HighlightPanelLeft';
-import HighlightPanelRight from './Components/HighlightPanelRight';
+import { Route, Routes } from 'react-router-dom';
+
+import Home from './Pages/Home';
+import Products from './Pages/Products';
+import Business from './Pages/Business';
+import AboutUs from './Pages/AboutUs';
+
 
 export default function App() {
   return (
-      <div className="App">
-        <div id='HeaderDiv'>
-          <Header />
-        </div>
-        <div id='BodyDiv'>
-          <Highlight />
-          <HighlightPanelLeft />
-          <HighlightPanelRight />
-        </div>
-        <div id='FooterDiv'>
-          <Footer />
-        </div>
-      </div>
+    <Routes>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/products' element={<Products />}></Route>
+      <Route path='/business' element={<Business />}></Route>
+      <Route path='/aboutus' element={<AboutUs />}></Route>
+    </Routes>
   );
 }

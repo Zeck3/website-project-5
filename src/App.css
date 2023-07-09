@@ -1,5 +1,9 @@
+/* IMPORTS */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* ELEMENTS */
 
 * {
   box-sizing: border-box;
@@ -16,7 +20,7 @@ body {
 
 h1 {
   font-family: 'Anton', sans-serif;
-  font-size: 72px;
+  font-size: 56px;
   line-height: 1.2;
   letter-spacing: 1px;
   color: #F2EAD3;
@@ -24,7 +28,7 @@ h1 {
 
 h2 {
   font-family: 'Anton', sans-serif;
-  font-size: 40px;
+  font-size: 36px;
   letter-spacing: 1px;
   color: #F2EAD3;
 }
@@ -38,26 +42,26 @@ h3 {
 
 p {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: #F5F5F5;
 }
 
 li {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #F5F5F5;
 }
 
 ul {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #F5F5F5;
 }
 
 a {
   font-family: 'DM Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #F5F5F5;
 }
 
@@ -69,12 +73,118 @@ button {
   background-color: #F2EAD3;
 }
 
-#BodyDiv {
+/* HEADER */
+
+header {
   display: flex;
   position: relative;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 62px auto auto auto;
+  margin: auto;
   width: 100%;
   height: auto;
+  border-bottom: 1px solid #211717;
+}
+
+.HeaderSection {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: auto;
+  min-height: 5rem;
+  width: 75%;
+}
+
+.HeaderSection .Logo {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.HeaderSection .Logo img {
+  height: 50px;
+  margin: 0 20px;
+}
+
+.HeaderSection .NavigationBar {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 50%;
+}
+
+.HeaderSection .NavigationBar a {
+  flex: 25%;
+  text-align: center;
+  width: 200px;
+  padding: 0 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #211717;
+}
+
+.FooterSection {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  margin: auto;
+  width: 75%;
+  padding: 50px 0;
+}
+
+.FooterSection .Columns {
+  flex: 25%;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+}
+
+.FooterSection .Columns h3 {
+  line-height: 2.5;
+  margin: 30px 30px 0 0;
+}
+
+.FooterSection .Columns ul {
+  line-height: 2.5;
+}
+
+.FooterSection .Logo {
+  display: flex;
+  align-content: flex-start;
+  position: relative;
+  margin: 30px 30px 0 0;
+}
+
+.FooterSection .Logo .Cafe {
+  margin: 0;
+}
+
+.FooterSection .Columns .Contacts {
+  margin-top: 0;
 }
