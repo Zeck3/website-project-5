@@ -6,7 +6,6 @@ export default function Header() {
     return(
         <div className='HeaderSection'>
             <div className='Logo'>
-                <img src={Logo} alt='Coffee Logo'></img>
                 <h2>BARAKO</h2>
                 <h3>Café</h3>
             </div>

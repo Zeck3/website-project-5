@@ -13,9 +13,12 @@ export default function Home() {
                 <Header />
             </header>
             <main>
-                <Highlight />
-                <PanelLeft />
-                <PanelCenter />
+                <article>
+                    <Highlight />
+                </article>
+                <article>
+                    <PanelLeft />
+                </article>
             </main>
             <footer>
                 <Footer />
