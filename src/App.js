@@ -1,12 +1,12 @@
-import './App.css';
-import './MainComponents.css';
-
 import { Route, Routes } from 'react-router-dom';
 
 import Home from './Pages/Home';
 import Products from './Pages/Products';
 import Business from './Pages/Business';
 import AboutUs from './Pages/AboutUs';
+
+import './App.css';
+import './MainComponents.css';
 
 
 export default function App() {

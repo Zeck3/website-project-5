@@ -2,9 +2,7 @@ import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import Highlight from '../Components/Highlight';
-import PanelLeft from '../Components/PanelLeft';
-import PanelCenter from '../Components/PanelCenter';
-
+import SectionBreak from '../Components/SectionBreak';
 
 export default function Home() {
     return(
@@ -13,12 +11,12 @@ export default function Home() {
                 <Header />
             </header>
             <main>
-                <article>
+                <section>
                     <Highlight />
-                </article>
-                <article>
-                    <PanelLeft />
-                </article>
+                </section>
+                <section>
+                    <SectionBreak />
+                </section>
             </main>
             <footer>
                 <Footer />
