@@ -10,9 +10,15 @@ export default function PanelLeft() {
                 </div>
                 <div className='Column2'>
                     <h2>Menu</h2>
-                    <p>Choose your coffee, we have variarities available! 
-                    Espresso, Cappuccino, Latte, Americano, Instant Coffees, 
-                    and our special Barako Coffee!</p>
+                    <p>Choose your coffee, we have variarities available!</p>
+                    <ul>
+                        <li>Espresso</li>
+                        <li>Cappuccino</li>
+                        <li>Latte</li>
+                        <li>Americano</li>
+                        <li>Macchiato</li>
+                        <li>and our special Barako Coffee!</li>
+                    </ul>
                     <button >SHOW MORE</button>
                 </div>
             </div>

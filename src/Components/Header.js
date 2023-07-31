@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../ImageAssets/Logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faListUl } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     return(
@@ -15,6 +16,14 @@ export default function Header() {
                 <Link to='/business'>Business</Link>
                 <Link to='/aboutus'>About Us</Link>
             </nav>
+            <div className='DropDown'>
+                <button className='ListButton'>
+                    <FontAwesomeIcon className='Icons' icon={faListUl}/>
+                </button>
+                <div className='Menu'>
+                    Menu
+                </div>
+            </div>
         </div>
-    );
+    )
 }
