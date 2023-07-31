@@ -70,7 +70,12 @@ button {
   width: 100px;
   height: 30px;
   border: none;
+  cursor: pointer;
   background-color: #F2EAD3;
+}
+
+button:hover {
+  background-color: #F5F5F5;
 }
 
 /* HEADER */
@@ -112,19 +117,48 @@ header {
 
 .HeaderSection .NavigationBar {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   width: 50%;
 }
 
 .HeaderSection .NavigationBar a {
-  flex: 25%;
   text-align: center;
   width: 200px;
-  padding: 0 30px;
   margin: auto;
   display: flex;
   flex-direction: column;
+}
+
+.HeaderSection .DropDown {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: inherit;
+
+}
+
+.HeaderSection .DropDown .ListButton {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 100%;
+}
+
+.HeaderSection .DropDown .Icons {
+  color: #080401;
+  width: 40px;
+  height: 40px;
+}
+
+.HeaderSection .DropDown .Menu {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 100px;
+  border: 1px solid white;
 }
 
 /* MAIN */
@@ -144,22 +178,34 @@ footer {
   display: flex;
   position: relative;
   flex-direction: column;
-  margin: auto;
   width: 100%;
-  height: 500px;
-  border-top: 1px solid #211717;
-  border: 1px solid white;
+  height: auto;
+  background-color: #080A09;
 }
 
 .FooterSection {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto;
   width: 75%;
-  padding: 50px 0;
-  border: 1px solid white;
+
+}
+
+.FooterSection hr {
+  margin-top: 20px;
+  color: #F5F5F5;
+}
+
+.FooterSection .Bottom {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+
 }
 
 .FooterSection .Logo {
@@ -175,4 +221,20 @@ footer {
 .FooterSection .Links {
   display: flex;
   align-items: center;
+}
+
+.FooterSection .Links .Icons {
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1024px){
+  .HeaderSection .NavigationBar {
+    display: none;
+  }
+
+  .HeaderSection .ListButton {
+    display: flex;
+  }
 }
