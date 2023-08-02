@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import MiniHeroSection from '../Components/MiniHeroSection';
 import PanelLeft from '../Components/PanelLeft';
-import PanelCenter from '../Components/PanelCenter';
+import ProductsSection from '../Components/ProductsSection';
 
 export default function Products() {
     return(
@@ -12,10 +13,13 @@ export default function Products() {
             </header>
             <main>
                 <section>
+                    <MiniHeroSection />
+                </section>
+                <section>
                     <PanelLeft />
                 </section>
                 <section>
-                    <PanelCenter />
+                    <ProductsSection />
                 </section>
             </main>
             <footer>
