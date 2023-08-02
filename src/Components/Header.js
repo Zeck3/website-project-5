@@ -11,8 +11,8 @@ export default function Header() {
                 <h3>Café</h3>
             </div>
             <nav className='NavigationBar'>
-                <Link to='/'>Home</Link>
-                <Link to='/products'>Products</Link>
+                <Link to='/home'>Home</Link>
+                <Link to='/'>Products</Link>
                 <Link to='/business'>Business</Link>
                 <Link to='/aboutus'>About Us</Link>
             </nav>
@@ -20,9 +20,14 @@ export default function Header() {
                 <button className='ListButton'>
                     <FontAwesomeIcon className='Icons' icon={faListUl}/>
                 </button>
-                <div className='Menu'>
-                    Menu
-                </div>
+            </div>
+            <div className='Menu'>
+                <nav className='NavigationBar2'>
+                    <Link to='/home'>Home</Link>
+                    <Link to='/'>Products</Link>
+                    <Link to='/business'>Business</Link>
+                    <Link to='/aboutus'>About Us</Link>
+                </nav>
             </div>
         </div>
     )

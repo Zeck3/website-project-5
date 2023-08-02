@@ -14,6 +14,36 @@ function SocialMediaLinks({icon, link}) {
 export default function Footer() {
     return(
         <div className='FooterSection'>
+            <div className='Top'>
+                <div className='Contact'>
+                    <p>If you have any queries and feedbacks, <br /> feel free to contact us!</p>
+                    <div className='Email'>
+                        <label>Email:</label>
+                        <input type='text' placeholder='Email' />
+                    </div>
+                    <div className='Message'>
+                        <label>Message:</label>
+                        <input type='text' placeholder='Message' />
+                    </div>
+                    <button>submit</button>
+                </div>
+                <div className='Remarks'>
+                    <div className='Logo'>
+                        <h2>BARAKO</h2>
+                        <h3>Café</h3>
+                    </div>
+                    <p> BarakoCafé is a website designed for a coffee shop opening for e-commerce.
+                        Made with React JS. Made for honing coding and designing skills for 
+                        front-end web development.
+                    </p>
+                    <p> Obviously, it doesn't aesthetically appeal like an actual website,
+                        maybe because of the choice of fonts, colors and components, it may also
+                        lack interactivity. I aim to improve the UI/UX design for this.
+                        Criticisms are appreciated.
+                    </p>
+    
+                </div>
+            </div>
             <hr />
             <div className='Bottom'>
                 <div className='Logo'>
