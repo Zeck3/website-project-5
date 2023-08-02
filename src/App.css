@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 
 /* ELEMENTS */
 
@@ -14,27 +15,26 @@
 
 body {
   background: #080401;
-  background-blend-mode: screen;
   height: auto;
 }
 
 h1 {
-  font-family: 'Anton', sans-serif;
-  font-size: 56px;
+  font-family: 'Anton' , sans-serif;
+  font-size: 80px;
   line-height: 1.2;
   letter-spacing: 1px;
   color: #F2EAD3;
 }
 
 h2 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton' , sans-serif;
   font-size: 36px;
   letter-spacing: 1px;
   color: #F2EAD3;
 }
 
 h3 {
-  font-family: 'Anton', sans-serif;
+  font-family: 'Anton' , sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
   color: #F2EAD3;
@@ -42,26 +42,26 @@ h3 {
 
 p {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: #F5F5F5;
 }
 
 li {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #F5F5F5;
 }
 
 ul {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #F5F5F5;
 }
 
 a {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #F5F5F5;
 }
 
@@ -75,6 +75,27 @@ button {
 }
 
 button:hover {
+  background-color: #F5F5F5;
+}
+
+label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #F5F5F5;
+}
+
+input[type=text] {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #080401;
+  border: none;
+  border-radius: 10px;
+  background-color: #F2EAD3;
+  padding: 4px 7px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+input[type=text]:hover {
   background-color: #F5F5F5;
 }
 
@@ -100,7 +121,7 @@ header {
   justify-content: space-between;
   flex-direction: row;
   margin: auto;
-  min-height: 5rem;
+  height: 5rem;
   width: 75%;
 }
 
@@ -130,11 +151,11 @@ header {
 }
 
 .HeaderSection .DropDown {
-  display: flex;
+  display: none;
   position: relative;
+  align-items: center;
   width: auto;
   height: inherit;
-
 }
 
 .HeaderSection .DropDown .ListButton {
@@ -142,24 +163,45 @@ header {
   position: relative;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 
 .HeaderSection .DropDown .Icons {
   color: #080401;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 
-.HeaderSection .DropDown .Menu {
-  display: flex;
+.HeaderSection .Menu {
+  display: none;
   position: absolute;
-  top: 100px;
+  justify-content: flex-end;
+  margin: auto;
+  top: 82px;
   width: 100%;
-  height: 100px;
+  height: auto;
   border: 1px solid white;
 }
+
+.HeaderSection .Menu .NavigationBar2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: auto;
+  width: 50%;
+  border: 1px solid white;
+}
+
+.HeaderSection .Menu .NavigationBar2 a {
+  text-align: center;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+}
+
 
 /* MAIN */
 
@@ -190,7 +232,45 @@ footer {
   justify-content: space-between;
   margin: auto;
   width: 75%;
+}
 
+.FooterSection .Top {
+  display: flex;
+  position: relative;
+  height: auto;
+  flex-direction: row;
+}
+
+.FooterSection .Top .Contact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.FooterSection .Top .Contact .Email {
+  margin: 20px 0;
+}
+
+.FooterSection .Top .Contact input {
+ margin-left: 20px;
+}
+
+.FooterSection .Top .Contact button {
+  margin-top: 25px;
+}
+
+.FooterSection .Top .Remarks {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.FooterSection .Top .Remarks .Logo {
+  padding: 0;
+}
+
+.FooterSection .Top .Remarks p {
+  margin: 15px 0;
 }
 
 .FooterSection hr {
@@ -229,12 +309,441 @@ footer {
   height: 40px;
 }
 
-@media screen and (max-width: 1024px){
+/* HERO SECTION */
+
+.HeroSectionDiv {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  background-image: radial-gradient(circle, rgba(112,76,62,0) 0%, rgba(8,4,1,0.1) 100%), linear-gradient(90deg, rgba(8,4,1,1) 0%, rgba(8,4,1,0) 64%),
+  url(./ImageAssets/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 1000px #080401 inset;
+  border-bottom: 1px solid #211717;
+}
+
+.HeroSectionDiv .Container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 75%;
+  height: inherit;
+}
+
+.HeroSectionDiv .Elements {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
+}
+
+.HeroSectionDiv .Elements p {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* SECTION1 */
+
+.Section1Div {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #1E140E;
+}
+
+.Section1Div .Container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  height: inherit;
+}
+
+.Section1Div .Container .Row {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+}
+
+.Section1Div .Container .RowRight {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  background-color: #18110C;
+}
+
+.Section1Div .Container .Column {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 37.5%;
+}
+
+.Section1Div .Container .Column img {
+  height: 26vw;
+  margin: auto;
+  width: auto;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.Section1Div .Container .Row .Column .Elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 375px;
+  margin-left: 20px;
+}
+
+.Section1Div .Container .RowRight .Column .Elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 375px;
+}
+
+.Section1Div .Container .Row .Column .Elements h3,
+.Section1Div .Container .RowRight .Column .Elements h3 {
+  margin: 15px 0;
+}
+
+/* MINI HERO SECTION */
+
+.MiniHeroSectionDiv {
+  display: flex;
+  position: relative;
+  align-content: center;
+  width: 100%;
+  height: 400px;
+  background-image: radial-gradient(circle, rgba(8,4,1,1) 0%, rgba(8,4,1,0.38139005602240894) 100%),
+  url(./ImageAssets/pexels-roman-odintsov-4551154.jpg);
+  background-size: cover;
+  background-position: left;
+}
+
+.MiniHeroSectionDiv .Container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: inherit;
+  width: 75%;
+}
+
+.MiniHeroSectionDiv .Container h1 {
+  font-size: 64px;
+  text-align: center;
+}
+
+.MiniHeroSectionDiv .Container p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* PRODUCTS SECTION */
+
+.ProductsSectionDiv {
+  position: relative;
+  height: auto;
+  background-color: #1E140E;
+}
+
+.ProductsSectionDiv .InteractionMenu {
+  position: relative;
+  background-color: #18110C;
+  width: 100%;
+  height: 200px;
+}
+
+.ProductsSectionDiv .Container {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: inherit;
+}
+
+.ProductsSectionDiv .Container .SquaresSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 1s;
+}
+
+.ProductsSectionDiv .SquaresSection .Squares {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #18110C;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.ProductsSectionDiv .SquaresSection .Squares img {
+  width: 150px;
+  height: 150px;
+}
+
+.ProductsSectionDiv .SquaresSection .Squares svg {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 190px;
+  margin-bottom: 180px;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+}
+
+.ProductsSectionDiv .SquaresSection .Squares path {
+  fill: #F2EAD3;
+}
+
+.ProductsSectionDiv .SquaresSection .Squares .Price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #F2EAD3;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  color: #080401;
+}
+
+/* PANEL LEFT */
+
+.PanelLeftDiv {
+  display: flex;
+  position: relative;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #211717;
+  background-color: #F2EAD3;
+  padding: 100px 0;
+}
+
+.PanelLeftDiv .Container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+  height: inherit;
+  width: 75%;
+  flex-direction: row;
+  background-color: #0d0c0a;
+}
+
+.MiniHeroSectionDiv .Container svg{
+  border: 1px solid white;
+  background: transparent;
+}
+
+.PanelLeftDiv .Column1 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  height: 500px;
+  width: 50%;
+}
+
+.PanelLeftDiv .Column1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.PanelLeftDiv .Column2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 500px;
+  padding: 0 50px;
+  width: 50%;
+}
+
+.PanelLeftDiv .Column2 p {
+  margin: 20px 0;
+  width: 65%;
+}
+
+.PanelLeftDiv .Column2 ul {
+  margin-bottom: 20px;
+}
+
+.PanelLeftDiv .Column2 ul li{
+  line-height: 2.5;
+  margin-left: 15px;
+}
+
+/* ABOUT US SECTION */
+
+.AboutUsSectionDiv {
+  height: 700px;
+  background-color: #F2EAD3;
+  background-image: radial-gradient(circle, rgba(112,76,62,0) 0%, rgba(8,4,1,0.1) 100%), linear-gradient(90deg, rgba(8,4,1,1) 0%, rgba(8,4,1,0) 100%), 
+  url('./ImageAssets/pexels-mahmoud-yahyaoui-14745650.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .Section1Div .Container .Column img {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .HeaderSection .NavigationBar {
     display: none;
   }
 
-  .HeaderSection .ListButton {
+  .HeaderSection .DropDown {
     display: flex;
+  }
+
+  .HeroSectionDiv {
+    background-image: linear-gradient(90deg, rgba(8,4,1,1) 0%, rgba(8,4,1,0) 100%),
+    url(./ImageAssets/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+  }
+
+  .Section1Div .Container .Column {
+    width: 100%;
+  }
+
+  .Section1Div .Container .Column img {
+    height: 300px;
+    margin: 20px 0;
+  }
+  .Section1Div .Container .Row {
+    flex-direction: column;
+  }
+  
+  .Section1Div .Container .RowRight {
+    flex-direction: column-reverse;
+  }
+
+  .Section1Div .Container .Row .Column p,
+  .Section1Div .Container .Row .Column h3,
+  .Section1Div .Container .RowRight .Column p,
+  .Section1Div .Container .RowRight .Column h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .Section1Div .Container .Row .Column .Elements {
+    margin-left: 0;
+  }
+
+  .Section1Div .Container .RowRight .Column .Elements {
+    margin-right: 0;
+  }
+
+  .FooterSection .Top {
+    flex-direction: column;
+  }
+
+  .FooterSection .Top .Contact,
+  .FooterSection .Top .Remarks{
+    width: 100%;
+  }
+
+  .ProductsSectionDiv .Container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  p, label, input[type=text] {
+    font-size: 14px;
+  }
+
+  .HeaderSection,
+  .FooterSection,
+  .HeroSectionDiv .Container {
+    width: 85%;
+  }
+
+  .HeroSectionDiv .Elements h1 {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  p, label, input[type=text] {
+    font-size: 12px;
+  }
+
+  .HeaderSection {
+    height: 4rem;
+  }
+
+  .Logo h2 {
+    font-size: 24px;
+  }
+  .Logo h3 {
+    font-size: 10;
+  }
+
+  .HeroSectionDiv {
+    background-image: radial-gradient(circle, rgba(8,4,1,1) 10%, rgba(8,4,1,0.38139005602240894) 100%),
+    url(./ImageAssets/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
+  }
+
+  .HeroSectionDiv .Elements {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .HeroSectionDiv .Elements h1 {
+    font-size: 46px;
+    text-align: center;
+  }
+
+  .HeroSectionDiv .Elements p {
+    text-align: center;
+  }
+
+  .Section1Div .Container .Column img {
+    height: 60vw;
+  }
+
+  .FooterSection .Links .Icons {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+  }
+
+  .ProductsSectionDiv .SquaresSection .Squares {
+    margin: 30px 0;
   }
 }
