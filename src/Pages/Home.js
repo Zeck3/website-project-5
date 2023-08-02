@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import Highlight from '../Components/Highlight';
-import SectionBreak from '../Components/SectionBreak';
+import HeroSection from '../Components/HeroSection';
+import Section1 from '../Components/Section1';
 
 export default function Home() {
     return(
@@ -12,10 +12,10 @@ export default function Home() {
             </header>
             <main>
                 <section>
-                    <Highlight />
+                    <HeroSection />
                 </section>
                 <section>
-                    <SectionBreak />
+                    <Section1 />
                 </section>
             </main>
             <footer>
