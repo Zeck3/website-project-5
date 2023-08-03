@@ -11,8 +11,8 @@ export default function Header() {
                 <h3>Café</h3>
             </div>
             <nav className='NavigationBar'>
-                <Link to='/home'>Home</Link>
-                <Link to='/'>Products</Link>
+                <Link to='/'>Home</Link>
+                <Link to='/products'>Products</Link>
                 <Link to='/business'>Business</Link>
                 <Link to='/aboutus'>About Us</Link>
                 <div className='ShoppingCart'>
@@ -28,10 +28,15 @@ export default function Header() {
             </div>
             <div className='Menu'>
                 <nav className='NavigationBar2'>
-                    <Link to='/home'>Home</Link>
-                    <Link to='/'>Products</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/products'>Products</Link>
                     <Link to='/business'>Business</Link>
                     <Link to='/aboutus'>About Us</Link>
+                    <div className='ShoppingCart'>
+                        <button>
+                            <FontAwesomeIcon className='Icons' icon={faShoppingCart}/>
+                        </button>
+                    </div>
                 </nav>
             </div>
         </div>
