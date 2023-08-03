@@ -5,7 +5,7 @@ import { faFacebook, faYoutube, faTwitter, faInstagram } from '@fortawesome/free
 
 function SocialMediaLinks({icon, link}) {
     return(
-        <a href={link} target='_blank'>
+        <a href={link} target='_blank' rel='noreferrer'>
             <span>
                 <FontAwesomeIcon className='Icons' icon={icon} />
             </span>
