@@ -6,7 +6,9 @@ import { faFacebook, faYoutube, faTwitter, faInstagram } from '@fortawesome/free
 function SocialMediaLinks({icon, link}) {
     return(
         <a href={link} target='_blank'>
-            <FontAwesomeIcon className='Icons' icon={icon} />
+            <span>
+                <FontAwesomeIcon className='Icons' icon={icon} />
+            </span>
         </a>
     )
 }
@@ -23,7 +25,7 @@ export default function Footer() {
                     </div>
                     <div className='Message'>
                         <label>Message:</label>
-                        <input type='text' placeholder='Message' />
+                        <textarea placeholder='Message' />
                     </div>
                     <button>submit</button>
                 </div>

@@ -16,9 +16,6 @@ export default function Products() {
                     <MiniHeroSection />
                 </section>
                 <section>
-                    <PanelLeft />
-                </section>
-                <section>
                     <ProductsSection />
                 </section>
             </main>
