@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* ELEMENTS */
 
@@ -262,6 +261,7 @@ footer {
   width: 100%;
   height: auto;
   background-color: #130F0C;
+  border-top: 1px solid #211717;
 }
 
 .FooterSection {
@@ -442,7 +442,7 @@ footer {
   justify-content: center;
   width: 100%;
   height: 600px;
-  background-color: #18110C;
+  background-color: #130F0C;
 }
 
 .Section1Div .Container .Column {
@@ -495,6 +495,7 @@ footer {
   url(./ImageAssets/pexels-roman-odintsov-4551154.jpg);
   background-size: cover;
   background-position: left;
+  border-bottom: 1px solid #211717;
 }
 
 .MiniHeroSectionDiv .Container {
@@ -547,7 +548,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #18110C;
+  background-color: #130F0C;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
   width: 300px;
   height: 300px;
@@ -601,77 +602,6 @@ footer {
 .ProductsSectionDiv .SquaresSection .Squares .Icons {
   width: 40px;
   height: 40px;
-}
-
-
-/* PANEL LEFT */
-
-.PanelLeftDiv {
-  display: flex;
-  position: relative;
-  align-content: center;
-  width: 100%;
-  height: auto;
-  border-bottom: 1px solid #211717;
-  background-color: #F2EAD3;
-  padding: 100px 0;
-}
-
-.PanelLeftDiv .Container {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  margin: auto;
-  height: inherit;
-  width: 75%;
-  flex-direction: row;
-  background-color: #0d0c0a;
-}
-
-.MiniHeroSectionDiv .Container svg{
-  border: 1px solid white;
-  background: transparent;
-}
-
-.PanelLeftDiv .Column1 {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  margin: auto;
-  height: 500px;
-  width: 50%;
-}
-
-.PanelLeftDiv .Column1 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.PanelLeftDiv .Column2 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  height: 500px;
-  padding: 0 50px;
-  width: 50%;
-}
-
-.PanelLeftDiv .Column2 p {
-  margin: 20px 0;
-  width: 65%;
-}
-
-.PanelLeftDiv .Column2 ul {
-  margin-bottom: 20px;
-}
-
-.PanelLeftDiv .Column2 ul li{
-  line-height: 2.5;
-  margin-left: 15px;
 }
 
 /* ABOUT US SECTION */
@@ -747,6 +677,30 @@ footer {
 
 .AboutUsSectionDiv .Main .Column .References li {
   margin: 15px 0;
+}
+
+/* BUSINESS PAGE */
+
+.BusinessPageDiv {
+  display: flex;
+  position: relative;
+  align-content: center;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #211717;
+  background-color: #F2EAD3;
+  padding: 100px 0;
+}
+
+.BusinessPageDiv .Container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+  height: inherit;
+  width: 75%;
+  flex-direction: row;
+  background-color: #0d0c0a;
 }
 
 @media screen and (min-width: 1440px) {
