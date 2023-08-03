@@ -10,8 +10,8 @@ import './App.css';
 export default function App() {
   return (
     <Routes>
-      <Route path='/home' element={<Home />}></Route>
-      <Route path='/' element={<Products />}></Route>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/products' element={<Products />}></Route>
       <Route path='/business' element={<Business />}></Route>
       <Route path='/aboutus' element={<AboutUs />}></Route>
     </Routes>
