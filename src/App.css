@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* ELEMENTS */
 
@@ -14,7 +14,7 @@
 }
 
 body {
-  background: #080401;
+  background: #130F0C;
   height: auto;
 }
 
@@ -87,16 +87,28 @@ label {
 input[type=text] {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
-  color: #080401;
+  color: #130F0C;
   border: none;
   border-radius: 10px;
   background-color: #F2EAD3;
-  padding: 4px 7px;
+  padding: 4px 15px;
   box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
 }
 
 input[type=text]:hover {
   background-color: #F5F5F5;
+}
+
+textarea {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #130F0C;
+  border: none;
+  border-radius: 10px;
+  background-color: #F2EAD3;
+  padding: 4px 15px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  resize: none;
 }
 
 /* HEADER */
@@ -108,9 +120,9 @@ header {
   margin: auto;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   height: auto;
-  background-color: #080A09;
+  background-color: #130F0C;
   border-bottom: 1px solid #211717;
 }
 
@@ -139,7 +151,7 @@ header {
 .HeaderSection .NavigationBar {
   display: flex;
   position: relative;
-  width: 50%;
+  width: 60%;
 }
 
 .HeaderSection .NavigationBar a {
@@ -148,6 +160,26 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
+}
+
+.HeaderSection .NavigationBar .ShoppingCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  width: 200px;
+}
+
+.HeaderSection .NavigationBar .ShoppingCart .Icons {
+  width: 30px;
+  height: 30px;
+}
+
+.HeaderSection .NavigationBar .ShoppingCart button {
+  color: #F2EAD3;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
 }
 
 .HeaderSection .DropDown {
@@ -168,11 +200,18 @@ header {
   border-radius: 10px;
 }
 
+.HeaderSection .DropDown button {
+  color: #F2EAD3;
+  background-color: transparent;
+}
+
 .HeaderSection .DropDown .Icons {
-  color: #080401;
+  margin: 0 10px;
   width: 30px;
   height: 30px;
 }
+
+
 
 .HeaderSection .Menu {
   display: none;
@@ -222,7 +261,7 @@ footer {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #080A09;
+  background-color: #130F0C;
 }
 
 .FooterSection {
@@ -249,15 +288,31 @@ footer {
 }
 
 .FooterSection .Top .Contact .Email {
-  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin-top: 10px;
 }
 
-.FooterSection .Top .Contact input {
- margin-left: 20px;
+.FooterSection .Top .Contact textarea {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.FooterSection .Top .Contact label {
+  margin: 10px 20px 10px 0;
 }
 
 .FooterSection .Top .Contact button {
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+.FooterSection .Top .Contact .Message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 270px;
 }
 
 .FooterSection .Top .Remarks {
@@ -274,7 +329,7 @@ footer {
 }
 
 .FooterSection hr {
-  margin-top: 20px;
+  margin-top: 50px;
   color: #F5F5F5;
 }
 
@@ -303,6 +358,10 @@ footer {
   align-items: center;
 }
 
+.FooterSection .Links span {
+  color: #F2EAD3;
+}
+
 .FooterSection .Links .Icons {
   margin: 0 10px;
   width: 40px;
@@ -321,7 +380,7 @@ footer {
   url(./ImageAssets/nathan-dumlao-XOhI_kW_TaM-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 1000px #080401 inset;
+  box-shadow: 0 0 1000px #130F0C inset;
   border-bottom: 1px solid #211717;
 }
 
@@ -462,23 +521,17 @@ footer {
 /* PRODUCTS SECTION */
 
 .ProductsSectionDiv {
+  display: flex;
   position: relative;
   height: auto;
   background-color: #1E140E;
-}
-
-.ProductsSectionDiv .InteractionMenu {
-  position: relative;
-  background-color: #18110C;
-  width: 100%;
-  height: 200px;
 }
 
 .ProductsSectionDiv .Container {
   position: relative;
   margin: auto;
   width: 80%;
-  height: inherit;
+  height: auto;
 }
 
 .ProductsSectionDiv .Container .SquaresSection {
@@ -517,7 +570,7 @@ footer {
   height: 120px;
 }
 
-.ProductsSectionDiv .SquaresSection .Squares path {
+.ProductsSectionDiv .SquaresSection .Squares svg path {
   fill: #F2EAD3;
 }
 
@@ -530,8 +583,26 @@ footer {
   border-radius: 10px;
   width: 100px;
   height: 30px;
-  color: #080401;
+  color: #130F0C;
 }
+
+.ProductsSectionDiv .SquaresSection .Squares span {
+  margin-left: -200px;
+  margin-bottom: 3px;
+  z-index: 1;
+}
+
+
+.ProductsSectionDiv .SquaresSection .Squares span path {
+  fill: #1E140E;
+}
+
+
+.ProductsSectionDiv .SquaresSection .Squares .Icons {
+  width: 40px;
+  height: 40px;
+}
+
 
 /* PANEL LEFT */
 
@@ -606,12 +677,76 @@ footer {
 /* ABOUT US SECTION */
 
 .AboutUsSectionDiv {
-  height: 700px;
-  background-color: #F2EAD3;
+  height: auto;
+}
+
+.AboutUsSectionDiv .Image {
+  display: flex;
+  align-items: flex-end;
+  height: 500px;
   background-image: radial-gradient(circle, rgba(112,76,62,0) 0%, rgba(8,4,1,0.1) 100%), linear-gradient(90deg, rgba(8,4,1,1) 0%, rgba(8,4,1,0) 100%), 
   url('./ImageAssets/pexels-mahmoud-yahyaoui-14745650.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.AboutUsSectionDiv .Image h1{
+  opacity: 50%;
+  margin-left: 12.5%;
+  margin-bottom: 50px;
+}
+
+.AboutUsSectionDiv .Main {
+  display: flex;
+  position: relative;
+  flex: row;
+  height: auto;
+  background-color: #1E140E;
+}
+
+.AboutUsSectionDiv .Main .Column {
+  display: flex;
+  flex-direction: column;
+  width: 87.5%;
+  margin-left: 12.5%;
+  padding: 50px 0;
+}
+
+.AboutUsSectionDiv .Main .Column .About {
+  width: 550px;
+}
+
+.AboutUsSectionDiv .Main .Column .About img {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.AboutUsSectionDiv .Main .Column .About .Logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.AboutUsSectionDiv .Main .Column .About p {
+  margin: 15px 0;
+}
+
+.AboutUsSectionDiv .Main .Column .References {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin-top: 50px;
+}
+
+.AboutUsSectionDiv .Main .Column .References ul {
+  margin-left: 20px
+}
+
+.AboutUsSectionDiv .Main .Column .References li {
+  margin: 15px 0;
 }
 
 @media screen and (min-width: 1440px) {
@@ -680,10 +815,14 @@ footer {
   .ProductsSectionDiv .Container {
     width: 100%;
   }
+
+  .AboutUsSectionDiv .Image h1 {
+    font-size: 56px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  p, label, input[type=text] {
+  p, label, input[type=text], textarea, li, a {
     font-size: 14px;
   }
 
@@ -696,10 +835,34 @@ footer {
   .HeroSectionDiv .Elements h1 {
     font-size: 64px;
   }
+
+  .MiniHeroSectionDiv .Container {
+    width: 100%;
+  }
+
+  .MiniHeroSectionDiv .Container h1 {
+    font-size: 56px;
+  }
+
+  .AboutUsSectionDiv .Main .Column {
+    width: 85%;
+    justify-content: center;
+    margin-left: 0;
+    margin: 0 7.5%;
+  }
+
+  .AboutUsSectionDiv .Main .Column .About,
+  .AboutUsSectionDiv .Main .Column .References {
+    width: auto;
+  }
+
+  .AboutUsSectionDiv .Image h1 {
+    font-size: 42px;
+  }
 }
 
 @media screen and (max-width: 490px) {
-  p, label, input[type=text] {
+  p, label, input[type=text], textarea, li, a {
     font-size: 12px;
   }
 
@@ -745,5 +908,13 @@ footer {
 
   .ProductsSectionDiv .SquaresSection .Squares {
     margin: 30px 0;
+  }
+
+  .MiniHeroSectionDiv .Container h1 {
+    font-size: 36px;
+  }
+
+  .AboutUsSectionDiv .Image h1 {
+    font-size: 27px;
   }
 }
