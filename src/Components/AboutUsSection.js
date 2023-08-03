@@ -27,8 +27,9 @@ export default function AboutUsSection() {
                     <div className="References">
                         <h3>References:</h3>
                         <ul>
-                            <li>Images are open source royalty free images from <a href="https://www.pexels.com/" target="_blank" rel='noreferrer'>https://www.pexels.com/</a> and <a href="https://pixabay.com/" target="_blank" rel='noreferrer'>https://pixabay.com/</a></li>
+                            <li>Images used are royalty free images from <a href="https://www.pexels.com/" target="_blank" rel='noreferrer'>https://www.pexels.com/</a> and <a href="https://pixabay.com/" target="_blank" rel='noreferrer'>https://pixabay.com/</a></li>
                             <li>Social media icons and other icons are from <a href="https://fontawesome.com/" target="_blank" rel='noreferrer'>https://fontawesome.com/</a></li>
+                            <li>Fonts used, Anton and DM Sans from <a href="https://fonts.google.com/" target="_blank" rel='noreferrer'>https://fonts.google.com/</a></li>
                             <li>Website solely made with React JS</li>
                         </ul>
                     </div>

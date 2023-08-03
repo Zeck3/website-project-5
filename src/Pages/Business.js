@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import PanelLeft from '../Components/PanelLeft';
+import BusinessPage from '../Components/BusinessPage';
 
 export default function Business() {
     return(
@@ -11,7 +11,7 @@ export default function Business() {
             </header>
             <main>
                 <section>
-                    <PanelLeft />
+                    <BusinessPage />
                 </section>
             </main>
             <footer>
