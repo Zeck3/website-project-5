@@ -10,7 +10,7 @@ export default function AboutUsSection() {
             <div className="Main">
                 <div className="Column">
                     <div className="About">
-                        <img src={CoffeeTable}></img>
+                        <img src={CoffeeTable} alt="Coffee Table"></img>
                         <div className='Logo'>
                             <h2>BARAKO</h2>
                             <h3>Café</h3>
@@ -27,8 +27,8 @@ export default function AboutUsSection() {
                     <div className="References">
                         <h3>References:</h3>
                         <ul>
-                            <li>Images are open source royalty free images from <a href="https://www.pexels.com/" target="_blank">https://www.pexels.com/</a> and <a href="https://pixabay.com/" target="_blank">https://pixabay.com/</a></li>
-                            <li>Social media icons and other icons are from <a href="https://fontawesome.com/" target="_blank">https://fontawesome.com/</a></li>
+                            <li>Images are open source royalty free images from <a href="https://www.pexels.com/" target="_blank" rel='noreferrer'>https://www.pexels.com/</a> and <a href="https://pixabay.com/" target="_blank" rel='noreferrer'>https://pixabay.com/</a></li>
+                            <li>Social media icons and other icons are from <a href="https://fontawesome.com/" target="_blank" rel='noreferrer'>https://fontawesome.com/</a></li>
                             <li>Website solely made with React JS</li>
                         </ul>
                     </div>
