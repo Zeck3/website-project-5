@@ -5,13 +5,13 @@ import { faListUl, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
 
-    const [something, setSomething] = useState(null)
+    const [something, setSomething] = useState(false)
 
     function handleClick() {
-        if (something === null) {
-            setSomething({display: 'flex'})
+        if (something === false) {
+            setSomething(true)
         } else {
-            setSomething(null)
+            setSomething(false)
         }
     }
     
@@ -37,7 +37,7 @@ export default function Header() {
                     <FontAwesomeIcon className='Icons' icon={faListUl}/>
                 </button>
             </div>
-            <div className='Menu' style={something}>
+            <div className='Menu' style={{display: something ? 'flex' : 'none'}}>
                 <nav className='NavigationBar2'>
                     <Link to='/'>Home</Link>
                     <Link to='/products'>Products</Link>
