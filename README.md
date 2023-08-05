@@ -5,8 +5,6 @@ barriers of my capabilities, what I will learn from this journey will be useful 
 aiming for, but I might not be sure where that destination would be.
 
 ## Program Description
-<<<<<<< HEAD
-The project 
-=======
-The project 
->>>>>>> c28ddc3dd73f9a158a5fce93f70116d7e36584c5
+BarakoCafé is a website designed for a coffee shop opening for e-commerce. Made with React JS. Obviously, 
+it doesn't aesthetically appeal like an actual website, maybe because of the choice of fonts, colors and components, it may also lack interactivity. I aim to improve the UI/UX design for this. Criticisms are appreciated.
+
