@@ -8,3 +8,4 @@ BarakoCafé is a website designed for a coffee shop opening for e-commerce. Made
 
 ## Bugs
 - Optimization issues with loading resources
+- Not responsive enough
